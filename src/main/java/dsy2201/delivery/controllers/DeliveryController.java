@@ -46,21 +46,21 @@ public class DeliveryController {
             addressAdminList
         );
         
-        //roles normal user.
+        //roles normal user 1.
         List<RolUserModel> rolNormalUserList = new ArrayList<>();
         RolUserModel          role1User2= new RolUserModel(2, "NORMAL");
 
-        //addresess normal user.
+        //addresess normal user 1.
         List<AddressUserModel> addressNormalUserList = new ArrayList<>();
         AddressUserModel    addres1User2= new AddressUserModel(1, "fondo de bikini 24");
         AddressUserModel    address2User2= new AddressUserModel(2, "crustaceo cascarudo 1, fondo de bikini");
 
-        //creating normal user adding 1 rol and 2 addresses.
+        //creating normal user 1: adding 1 rol and 2 addresses.
         rolNormalUserList.add(role1User2);
         addressNormalUserList.add(addres1User2);
         addressNormalUserList.add(address2User2);
 
-        //creating normal user
+        //creating normal user 1.
         UserModel normalUser1 = new UserModel(
             2,            
             "bob",  
@@ -70,10 +70,34 @@ public class DeliveryController {
             rolNormalUserList,       
             addressNormalUserList  
         );
+
+        //roles normal user 2.
+        List<RolUserModel> rolNormalUserList3 = new ArrayList<>();
+        RolUserModel          role1User3= new RolUserModel(2, "NORMAL");
+
+        //addresess normal user 2.
+        List<AddressUserModel> addressNormalUserList3 = new ArrayList<>();
+        AddressUserModel    addres1User3= new AddressUserModel(1, "fondo de bikini 25");
+
+        //creating normal user 2: adding 1 rol and 2 addresses.
+        rolNormalUserList3.add(role1User3);
+        addressNormalUserList3.add(addres1User3);
+
+        //creating normal user 2.
+        UserModel normalUser2 = new UserModel(
+            3,            
+            "patricio",  
+            "estrella", 
+            "patrickostasr24@hotmail.com", 
+            "987654321",
+            rolNormalUserList3,       
+            addressNormalUserList3  
+        );
         
-        //add normal and admin user to list.
+        //add normal and admin users to list.
         users.add(adminUser);
         users.add(normalUser1);
+        users.add(normalUser2);
     }
 
     //Get Method that return a list of UserModel objects created by: IGNACIO EDUARDO RIQUELME ERAZO.
